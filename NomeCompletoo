@@ -1,0 +1,24 @@
+//programa pedido pelo Fábio..inserir nome completo
+import java.util.Scanner;
+
+public class NomeCompletoo{
+	
+	public static void main(String[]args){
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Quantos nomes tem?");
+		String nome = " ";
+		int x = teclado.nextInt();
+		int y =0;
+		String nomeCompleto = " ";
+		
+    while(y<x){
+			System.out.println("Insira o seu nome");
+			nome = teclado.next() + " "; // como as strings ficavam todas juntas, acrescentei um espaço ao nome que o utilizador ia inserir
+			y++;
+			nomeCompleto += nome; //para as strings irem ficando guardadas numa variável nova(nomeCompleto)
+    }
+		
+		System.out.println("O seu nome é" + nomeCompleto );	
+	}
+}
